@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donde Marichui - Catálogo de Dulces</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-pink: #FF69B4;
+            --light-pink: #FFC0CB;
+            --white: #FFFFFF;
+            --turquoise: #40E0D0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #FFF0F5;
+        }
+
+        header {
+            background-color: var(--primary-pink);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--white);
+            flex-shrink: 0;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-text {
+            color: var(--white);
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-text p {
+            font-size: 1.2rem;
+        }
+
+        .catalog {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            color: var(--primary-pink);
+            margin: 1rem 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .social-footer {
+            background-color: var(--primary-pink);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-text h1 {
+                font-size: 2rem;
+            }
+
+            .logo-container {
+                margin: 0 auto;
+            }
+        }
+        .category-title {
+            grid-column: 1 / -1;
+            color: var(--primary-pink);
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-pink);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sULjsWuZ73ylvGXmfp7DN4YbrCfN11.png" alt="Donde Marichui Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Donde Marichui</h1>
+            <p>𝐄𝐥 𝐭𝐨𝐪𝐮𝐞 𝐝𝐞 𝐝𝐮𝐥𝐳𝐮𝐫𝐚 𝐪𝐮𝐞 𝐧𝐞𝐜𝐞𝐬𝐢𝐭𝐚𝐬.</p>
+        </div>
+    </header>
+
+    <main class="catalog">
+        <h2 class="category-title">POSTRES</h2>
+        <div class="product-card">
+            <img src="https://www.recetasnestle.com.co/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/8b80d005d2b35d7a583470e3f19c9c1f.jpeg?itok=7TbncD74" alt="Arroz con Leche">
+            <h3>Arroz con Leche</h3>
+            <p class="price">$2.50</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.allrecipes.com/thmb/3zjqR0J3EYdaRwZ97AQAZoUSC5o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7399-tres-leches-milk-cake-ddmfs-beauty-2x1-BG-25702-f42c94b10c914753aa4dcb413658b8bf.jpg" alt="Tres Leches">
+            <h3>Tres Leches</h3>
+            <p class="price">$3.50</p>
+        </div>
+        <div class="product-card">
+            <img src="https://i.pinimg.com/originals/7f/0e/a4/7f0ea449d7f88eabf50d5100c3a3b98e.jpg" alt="Gelatina Mosaico">
+            <h3>Gelatina Mosaico</h3>
+            <p class="price">$2.50</p>
+        </div>
+        <div class="product-card">
+            <img src="https://i.ytimg.com/vi/vSHcYBGSmpw/maxresdefault.jpg" alt="Oreo Fresa">
+            <h3>Oreo Fresa</h3>
+            <p class="price">$3.50</p>
+        </div>
+        <h2 class="category-title">GOLOSINAS</h2>
+        <div class="product-card">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/02/27/0/FNK_Cake-Pops_H1.jpg.rend.hgtvcom.1280.960.suffix/1582853049838.webp" alt="Paletines">
+            <h3>Paletines</h3>
+            <p class="price">$1.50</p>
+        </div>
+        <div class="product-card">
+            <img src="https://7diasdesabor.com/wp-content/uploads/2023/10/POSTRE-3.jpg" alt="Merengues">
+            <h3>Merengues</h3>
+            <p class="price">$1.50</p>
+        </div>
+        <h2 class="category-title">BIZCOCHOS</h2>
+        <div class="product-card">
+            <img src="https://imag.bonviveur.com/interior-del-bizcocho-de-chocolate.jpg" alt="Bizcocho de Chocolate">
+            <h3>Bizcocho de Chocolate</h3>
+            <p class="price">$2.50</p>
+        </div>
+        <div class="product-card">
+            <img src="https://bizcocho.de/wp-content/uploads/2019/10/bizcocho-de-vainilla-receta.jpg" alt="Bizcocho de Vainilla">
+            <h3>Bizcocho de Vainilla</h3>
+            <p class="price">$2.50</p>
+        </div>
+        <h2 class="category-title">ANTOJOS</h2>
+        <div class="product-card">
+            <img src="https://i.ytimg.com/vi/cYzVUdC_2hc/maxresdefault.jpg" alt="Galletas">
+            <h3>Galletas</h3>
+            <p class="price">$2.00</p>
+        </div>
+        
+    </main>
+    
+
+    <footer class="social-footer">
+        <h2>¡Síguenos en nuestras redes sociales!</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/donde_marichui/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@donde_marichui" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

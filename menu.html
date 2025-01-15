@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donde Marichui - Menú</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-pink: #FF69B4;
+            --light-pink: #FFC0CB;
+            --brown: #4A3531;
+            --turquoise: #40E0D0;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #FFF0F5;
+        }
+
+        .menu-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .drip-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 15px solid var(--light-pink);
+            border-radius: 20px;
+            pointer-events: none;
+        }
+
+        .logo-container {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title {
+            color: var(--primary-pink);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .menu-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: var(--brown);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-name {
+            color: var(--turquoise);
+        }
+
+        .price {
+            color: var(--brown);
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px dashed var(--light-pink);
+        }
+
+        .contact h3 {
+            color: var(--turquoise);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact p {
+            color: var(--primary-pink);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .heart-mascot {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+        }
+
+        .product-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .product-images img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .menu-container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .product-images {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="drip-border"></div>
+        <div class="logo-container">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sULjsWuZ73ylvGXmfp7DN4YbrCfN11.png" alt="Donde Marichui Logo" class="logo">
+        </div>
+        <h1 class="title">DONDE MARICHUI</h1>
+
+        <div class="menu-section">
+            <h2 class="section-title">GOLOSINAS</h2>
+            <div class="menu-item">
+                <span class="item-name">Paletines</span>
+                <span class="price">$1.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Merengues</span>
+                <span class="price">$1.50</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">BIZCOCHOS</h2>
+            <div class="menu-item">
+                <span class="item-name">Chocolate</span>
+                <span class="price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Vainilla</span>
+                <span class="price">$2.50</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">ANTOJOS</h2>
+            <div class="menu-item">
+                <span class="item-name">Galletas</span>
+                <span class="price">$2.00</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">POSTRES</h2>
+            <div class="menu-item">
+                <span class="item-name">Arroz con leche</span>
+                <span class="price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Tres leches</span>
+                <span class="price">$3.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Gelatina mosaico</span>
+                <span class="price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Oreo fresa</span>
+                <span class="price">$3.50</span>
+            </div>
+        </div>
+
+        <div class="product-images">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/02/27/0/FNK_Cake-Pops_H1.jpg.rend.hgtvcom.1280.960.suffix/1582853049838.webp" alt="Cake pops">
+            <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/cropped_recipe_card_new/public/srh_recipes/54c6cbcbc6d611e056122d64560cd9c1.jpg.webp?itok=hemI3A_x" alt="Postre">
+            <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2015/09/cookies-receta.jpg" alt="Galletas">
+            <img src="https://mandolina.co/wp-content/uploads/2020/11/postre-de-oreo.jpg" alt="Postre Oreo">
+        </div>
+
+        <div class="contact">
+            <h3>PEDIDOS AL:</h3>
+            <p>+507 6175-8980</p>
+            <p>@donde_marichui</p>
+        </div>
+
+        <div class="heart-mascot">
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+</body>
+</html>
